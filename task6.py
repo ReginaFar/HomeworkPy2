@@ -19,7 +19,7 @@
 # }
 
 goods = []
-i = 1
+number = 1
 while True:
     answer = input('Хотите добавить новый товар? Тогда введите "да": ')
     if answer.lower() != 'да':
@@ -28,9 +28,9 @@ while True:
     goods_price = int(input("Цена товара: "))
     goods_quantity = int(input("Количество товаров: "))
     goods_measure = input("Единица измерения: ")
-    goods.append((i, {'название': goods_name, 'цена': goods_price,
-                      'количество': goods_quantity, 'eд': goods_measure}))
-    i = i + 1
+    goods.append((number, {'название': goods_name, 'цена': goods_price,
+                'количество': goods_quantity, 'eд': goods_measure}))
+    number = number + 1
 print(f"Исходный список товаров: \n{goods}")
 
 goods_names = []
@@ -48,5 +48,5 @@ analytics = {
     'цена': list(set(goods_prices)),
     'количество': list(set(goods_quantities)),
     'eд': list(set(goods_measures))
-}
+    }
 print(f"Аналитика о товарах: \n{analytics}")

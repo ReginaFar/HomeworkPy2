@@ -9,5 +9,5 @@
 
 rating = [11, 8, 6, 5, 3, 3, 1]
 rating.append(int(input('Введите новый элемент рейтинга:')))
-rating.sort(reverse=True)
+rating.sort(reverse = True)
 print(f'Новый рейтинг: {rating}')

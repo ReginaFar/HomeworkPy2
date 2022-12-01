@@ -3,10 +3,11 @@
 # Если слово длинное, выводить только первые 10 букв в слове.
 
 my_string = input('Введите предложение:').split()
-i = 0
-for word in my_string:
-    i += 1
-    if len(str(word)) > 10:
-        print(i, str(word)[0:10])
+number = 1
+for i in range(len(my_string)):
+    if len(my_string[i]) > 10:
+        print(number, my_string[i][0:10])
+        number += 1
     else:
-        print(i, word)
+        print(number, my_string[i])
+        number += 1

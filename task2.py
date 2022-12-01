@@ -4,11 +4,9 @@
 
 elements_quantity = int(input('Введите количество элементов списка:'))
 my_list = []
-i = 0
 element = 0
-while i < elements_quantity:
+for i in range(elements_quantity):
     my_list.append(input('Введите значение списка:'))
-    i += 1
 print(my_list)
 
 for el in range(int(len(my_list)/2)):
